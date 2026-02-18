@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMÓNICA | Centro de Cosmetología</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet">
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        rel="stylesheet"
+          />
+          <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+
+    <header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+
+      
+     <a class="navbar-brand d-flex align-items-center" href="#">
+
+      <!-- Logo -->
+      <img src="img/logo.png" 
+      alt="ARMÓNICA Logo"
+      class="logo-armonica me-2">
+
+
+
+      <!-- Texto -->
+      <div class="brand-text">
+      <span class="brand-title">ARMÓNICA</span>
+      <span class="brand-subtitle">Centro de Cosmetología</span>
+      </div>
+
+      </a>
+
+
+
+      <!-- Botón hamburguesa (móvil) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Enlaces -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Servicios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#productos">Productos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#profesionales">Profesionales</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#resultados">Resultados</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="btn btn-agendar ms-lg-3" href="#cita">
+              Agendar cita
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+
+  <!-- HERO -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Texto -->
+      <div class="col-md-6">
+        <h1 class="hero-title">
+          Realza tu belleza en manos de expertos
+        </h1>
+
+        <p class="hero-subtext">
+          Conoce nuestros servicios especializados y reserva tu cita desde la comodidad de tu hogar. Atencion personalizada y profesional al alcance de un clic.
+        </p>
+
+        <div class="d-flex flex-column flex-md-row gap-3">
+          <a href="#cita" class="btn btn-agendar">Agendar cita</a>
+          <a href="#servicios" class="btn btn-outline-rosa">Consultar servicios</a>
+        </div>
+      </div>
+
+      <!-- Imagen -->
+      <div class="col-md-6">
+        <img src="img/hero.jpg" 
+             class="img-fluid rounded" 
+             alt="Tratamiento estético profesional">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="services-section">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Nuestros servicios</h2>
+      <p class="section-subtitle">
+        Descubre nuestros tratamientos estéticos diseñados para realzar tu belleza natural y mejorar tu bienestar.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4 d-flex">
+        <div class="service-card w-100">
+          <img src="img/armonizacion.jpg" class="service-img img-armonizacion" alt="Armonización Facial">
+          <h4>Armonización Facial</h4>
+          <p>Ácido hialurónico, toxina botulínica/Botox, hilos tensores y bioestimuladores híbridos (Profhilo, Radiesse, Sculptra).</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="col-md-4 d-flex">
+        <div class="service-card w-100">
+          <img src="img/facial.jpg" class="service-img" alt="Tratamientos Faciales">
+          <h4>Tratamientos Faciales</h4>
+          <p>Limpiezas faciales, plasma rico en plaquetas faciales, corporales y capilares, Dermapen (microagujas) e hidratación profunda.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="col-md-4 d-flex">
+        <div class="service-card w-100">
+          <img src="img/corporal.jpg" class="service-img" alt="Tratamientos Corporales">
+          <h4>Tratamientos Corporales</h4>
+          <p>Hilos tensores corporales, tonificación y rejuvenecimiento en escote, brazos, abdomen, glúteos y piernas, masajes postoperatorios.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- PRODUCTOS -->
+<section id="productos" class="products-section">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Productos que ofrecemos</h2>
+      <p class="section-subtitle">
+        En ARMÓNICA, seleccionamos productos de alta calidad para el cuidado de tu piel y bienestar.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4 d-flex">
+        <div class="product-card w-100">
+          <img src="img/hidratacion.jpg" class="product-img" alt="Hidratación y Cuidado Facial">
+          <h4>Hidratación y Cuidado Facial</h4>
+          <p>Sueros antiedad, cremas con ácido hialurónico, contorno de ojos y fotoprotectores FPS 50+ para mantener tu piel radiante.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="col-md-4 d-flex">
+        <div class="product-card w-100">
+          <img src="img/tratamientos.jpg" class="product-img" alt="Tratamientos Corporales">
+          <h4>Tratamientos Corporales</h4>
+          <p>Aceites para masajes, geles reductores y cremas anticelulíticas con aminofilina y cafeína para potenciar tus resultados.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="col-md-4 d-flex">
+        <div class="product-card w-100">
+          <img src="img/peeling.jpg" class="product-img" alt="Peeling y Renovación">
+          <h4>Peeling y Renovación</h4>
+          <p>Ácidos glicólico, láctico y mandélico, peelings enzimáticos y exfoliantes profesionales para renovar y rejuvenecer tu piel.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- PROFESIONALES -->
+ <!-- PROFESIONALES -->
+<section id="profesionales" class="professionals-section">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Profesionales certificados</h2>
+      <p class="section-subtitle">
+        Nuestro equipo cuenta con amplia experiencia y certificaciones en cosmetología y medicina estética.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Profesional 1 -->
+      <div class="col-md-4 d-flex">
+        <div class="professional-card w-100">
+          <img src="img/profesional1.jpg" class="professional-img" alt="Johana Mora">
+          <h4>Johana Mora</h4>
+          <span class="professional-title">Cosmetóloga & Cosmiatra</span>
+          <p>Diplomado en inyectología y procedimientos mínimamente invasivos. Más de 6 años de experiencia.</p>
+        </div>
+      </div>
+
+      <!-- Profesional 2 -->
+      <div class="col-md-4 d-flex">
+        <div class="professional-card w-100">
+          <img src="img/profesional2.jpg" class="professional-img" alt="Tatiana Borja">
+          <h4>Tatiana Borja</h4>
+          <span class="professional-title">Odontóloga & Cosmiatra</span>
+          <p>Especialista en armonización orofacial y procedimientos médico estéticos. 4 años de experiencia.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- RESULTADOS -->
+  <section id="resultados" class="container mt-5">
+    <h2>Resultados reales</h2>
+    <p>Antes y después de algunos de nuestros tratamientos.</p>
+  </section>
+
+  <!-- EXPERIENCIAS -->
+  <section id="experiencias" class="container mt-5">
+    <h2>Experiencias de nuestras clientas</h2>
+    <p>La satisfacción de nuestras clientas nos respalda.</p>
+  </section>
+
+  <!-- SOBRE ARMÓNICA -->
+  <section id="sobre-armonica" class="container mt-5">
+    <h2>Sobre ARMÓNICA</h2>
+    <p>
+      ARMÓNICA Centro de Cosmetología es un espacio dedicado al bienestar
+      y cuidado integral de la piel.
+    </p>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section id="cita" class="container mt-5 mb-5">
+    <h2>Solicitud de cita</h2>
+    <p>Déjanos tus datos y nos pondremos en contacto contigo.</p>
+  </section>
+
+</main>
+
+<footer class="bg-dark text-light mt-5">
+  <div class="container py-4">
+    <div class="row">
+
+      <!-- Información del centro -->
+      <div class="col-md-6 mb-3">
+        <h5 class="fw-bold">ARMÓNICA Centro de Cosmetología</h5>
+        <p class="mb-1">
+          Atención profesional bajo cita previa, enfocada en el bienestar
+          y cuidado integral de la piel.
+        </p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-md-6 mb-3">
+        <h6 class="fw-bold">Contacto</h6>
+        <p class="mb-1">📞 WhatsApp: 322 713 2918</p>
+        <p class="mb-1">✉️ armonicacentrodecosmetologia@gmail.com</p>
+        <p class="mb-0">📍 Bogotá D.C</p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+  
+  </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+  <!-- Botón flotante de WhatsApp -->
+<a
+  href="https://wa.me/573227132918"
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="Contáctanos por WhatsApp"
+>
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+
+   <!-- JavaScript propio -->
+    <script src="js/main.js"></script>
+
+  
+</body>
+</html>
+

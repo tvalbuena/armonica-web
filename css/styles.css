@@ -1,0 +1,445 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+
+body {
+  background-color: #F9EFEF;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #4A4A4A;
+}
+
+
+/* Títulos principales */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #7B3F4A;
+}
+
+/* Párrafos */
+p {
+  line-height: 2.0;
+  color: #4A4A4A;
+}
+
+/* =========================
+   NAVBAR ARMÓNICA
+========================= */
+
+.navbar {
+  background-color: #ffffff;
+   border-bottom: 1.5px solid #D48FA6;
+  box-shadow: 0 4px 20px rgba(123, 63, 74, 0.08);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.logo-armonica {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Links del menú */
+.navbar .nav-link {
+  color: #7B3F4A;
+  font-weight: 500;
+  margin-right: 15px;
+}
+/* Texto marca */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #7B3F4A;
+}
+
+.brand-subtitle {
+  font-size: 0.8rem;
+  color: #7B3F4A;
+  letter-spacing: 1px;
+}
+
+.navbar .nav-link:hover {
+  color: #D48FA6;
+}
+
+/* Botón Agendar */
+.btn-agendar {
+  background-color: #7C8C6B;
+  color: white;
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-agendar:hover {
+  background-color: #6B7B5C;
+  color: white;
+}
+
+
+/* =========================
+   BOTÓN FLOTANTE WHATSAPP
+========================= */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.whatsapp-float i {
+  color: white;
+  font-size: 28px;
+}
+
+
+/* =========================
+   HERO 
+========================= */
+
+.hero-section {
+  padding: 80px 0 20px 0; /* arriba | derecha | abajo | izquierda */
+  background: linear-gradient(
+    to right,
+    #f9efef 60%,
+    rgba(249, 239, 239, 0.6)
+  );
+}
+
+.hero-title {
+  font-size: 4.0rem;
+  font-weight: 600;
+  color: #a64d6d;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-subtext {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 35px;
+  max-width: 500px;
+}
+
+
+/* =========================
+   HERO 
+========================= */
+
+.hero-section {
+  padding: 100px 0 60px 0;
+  background-color: #F9EFEF;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #a64d6d;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-subtext {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 35px;
+  max-width: 500px;
+}
+
+/* Agrega esto a tu CSS */
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 500px;
+}
+/* =========================
+   BOTONES HERO
+========================= */
+
+.hero-section .btn-agendar {
+  background-color: #7c8c6b;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+.hero-section .btn-agendar:hover {
+  background-color: #6b7b5c;
+}
+
+.btn-outline-rosa {
+  border: 2px solid #d48fa6;
+  color: #d48fa6;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-rosa:hover {
+  background-color: #d48fa6;
+  color: white;
+}
+
+/* =========================
+   BOTONES HERO
+========================= */
+
+.hero-section .btn-agendar {
+  background-color: #7c8c6b;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+.hero-section .btn-agendar:hover {
+  background-color: #6b7b5c;
+}
+
+.btn-outline-rosa {
+  border: 2px solid #d48fa6;
+  color: #d48fa6;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-rosa:hover {
+  background-color: #d48fa6;
+  color: white;
+}
+
+/* =========================
+   SERVICIOS
+========================= */
+
+.services-section {
+  padding: 80px 0;
+  background-color: #F9EFEF;
+  box-shadow: inset 0 15px 20px -10px rgba(212, 143, 166, 0.15);
+ }
+
+/* Título principal */
+.section-title {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Subtítulo */
+.section-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.05rem;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.service-card {
+  background-color: white;
+  padding: 28px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   IMÁGENES
+========================= */
+
+.service-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-img {
+  transform: scale(1.03);
+}
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.service-card h4 {
+  font-size: 1.35rem;
+  margin-top: 22px;
+  margin-bottom: 12px;
+  color: #7B3F4A;
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.products-section {
+  padding: 80px 0;
+  background-color: #fdf5f5;
+}
+
+.product-card {
+  background-color: white;
+  padding: 28px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.08);
+}
+
+.product-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+  margin-bottom: 5px;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.03);
+}
+
+.product-card h4 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  color: #7B3F4A;
+  font-weight: 600;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+}
+/* =========================
+   PROFESIONALES
+========================= */
+
+.professionals-section {
+  padding: 80px 0;
+  background-color: #F9EFEF;
+}
+
+.professional-card {
+  background-color: white;
+  padding: 35px 28px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.professional-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.08);
+}
+
+.professional-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #f9efef;
+  box-shadow: 0 4px 15px rgba(212, 143, 166, 0.3);
+}
+
+.professional-card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #7B3F4A;
+  margin-bottom: 6px;
+}
+
+.professional-title {
+  font-size: 0.85rem;
+  color: #d48fa6;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.professional-card p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
