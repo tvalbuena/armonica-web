@@ -442,10 +442,11 @@ p {
 
 .results-section {
   padding: 80px 0;
-  background-color: #fdf5f5;
+  background-color: #F9EFEF;
 }
 
 .resultado-card {
+  max-width: 450px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0,0,0,0.07);
@@ -455,18 +456,13 @@ p {
 
 .resultado-img {
   width: 100%;
-  height: 220px;
+  height: 300px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
-  transition: transform 0.4s ease;
-}
-
-.resultado-card:hover .resultado-img {
-  transform: scale(1.03);
 }
 
 .resultado-label {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #7B3F4A;
   padding: 14px 0 10px 0;
@@ -475,7 +471,7 @@ p {
 
 .resultado-indicators {
   position: relative;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .resultado-indicators button {
@@ -497,7 +493,6 @@ p {
   color: #999;
   font-style: italic;
 }
-
 
 
 /* =========================
