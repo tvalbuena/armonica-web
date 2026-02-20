@@ -378,18 +378,175 @@
 </section>
   
 
-  <!-- EXPERIENCIAS -->
-  <section id="experiencias" class="container mt-5">
-    <h2>Experiencias de nuestras clientas</h2>
-    <p>La satisfacción de nuestras clientas nos respalda.</p>
-  </section>
+  <!-- RESEÑAS -->
+<section id="experiencias" class="reviews-section">
+  <div class="container">
 
+    <div class="text-center mb-5">
+      <h2 class="section-title">Experiencias de nuestras clientas</h2>
+      <p class="section-subtitle">
+        La satisfacción de nuestras clientas nos respalda.
+      </p>
+      <!-- Rating general -->
+      <div class="reviews-rating mt-3">
+        <span class="rating-number">5.0</span>
+        <div class="rating-stars">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <span class="rating-source">Basado en reseñas de Google</span>
+      </div>
+    </div>
 
-  <!-- FORMULARIO -->
-  <section id="cita" class="container mt-5 mb-5">
-    <h2>Solicitud de cita</h2>
-    <p>Déjanos tus datos y nos pondremos en contacto contigo.</p>
-  </section>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Reseña 1 -->
+      <div class="col-md-4 d-flex">
+        <div class="review-card w-100">
+          <div class="review-header">
+            <div class="review-avatar">M</div>
+            <div>
+              <p class="review-name">María González</p>
+              <div class="review-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <img src="https://www.google.com/favicon.ico" class="google-icon" alt="Google">
+          </div>
+          <p class="review-text">"Excelente atención, Johana es muy profesional y los resultados superaron mis expectativas. El ambiente es muy agradable y te hacen sentir segura."</p>
+          <span class="review-date">Hace 2 semanas</span>
+        </div>
+      </div>
+
+      <!-- Reseña 2 -->
+      <div class="col-md-4 d-flex">
+        <div class="review-card w-100">
+          <div class="review-header">
+            <div class="review-avatar">L</div>
+            <div>
+              <p class="review-name">Laura Martínez</p>
+              <div class="review-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <img src="https://www.google.com/favicon.ico" class="google-icon" alt="Google">
+          </div>
+          <p class="review-text">"Me realizé la armonización facial con Tatiana y quedé encantada. Muy buena mano, explicó todo el procedimiento y los cuidados post-tratamiento."</p>
+          <span class="review-date">Hace 1 mes</span>
+        </div>
+      </div>
+
+      <!-- Reseña 3 -->
+      <div class="col-md-4 d-flex">
+        <div class="review-card w-100">
+          <div class="review-header">
+            <div class="review-avatar">S</div>
+            <div>
+              <p class="review-name">Sara Rodríguez</p>
+              <div class="review-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <img src="https://www.google.com/favicon.ico" class="google-icon" alt="Google">
+          </div>
+          <p class="review-text">"El mejor centro estético que he visitado en Bogotá. El trato es muy personalizado, se nota que les importa el bienestar de sus clientas. 100% recomendado."</p>
+          <span class="review-date">Hace 3 semanas</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FORMULARIO -->
+<section id="cita" class="form-section">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Agenda tu cita</h2>
+      <p class="section-subtitle">
+        Déjanos tus datos y nos pondremos en contacto contigo a la brevedad.
+      </p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="form-card">
+
+          <div class="row g-3">
+
+            <!-- Nombre -->
+            <div class="col-md-6">
+              <label class="form-label">Nombre *</label>
+              <input type="text" class="form-control form-input" placeholder="Tu nombre">
+            </div>
+
+            <!-- Apellido -->
+            <div class="col-md-6">
+              <label class="form-label">Apellido *</label>
+              <input type="text" class="form-control form-input" placeholder="Tu apellido">
+            </div>
+
+            <!-- Correo -->
+            <div class="col-md-6">
+              <label class="form-label">Correo electrónico *</label>
+              <input type="email" class="form-control form-input" placeholder="tucorreo@email.com">
+            </div>
+
+            <!-- Teléfono -->
+            <div class="col-md-6">
+              <label class="form-label">Número de teléfono *</label>
+              <input type="tel" class="form-control form-input" placeholder="+57 300 000 0000">
+            </div>
+
+            <!-- Procedimiento -->
+            <div class="col-12">
+              <label class="form-label">¿En qué procedimiento estás interesada? *</label>
+              <select class="form-select form-input">
+                <option value="" disabled selected>Selecciona un procedimiento</option>
+                <option>Armonización Facial</option>
+                <option>Ácido Hialurónico</option>
+                <option>Toxina Botulínica / Botox</option>
+                <option>Hilos Tensores</option>
+                <option>Bioestimuladores (Profhilo, Radiesse, Sculptra)</option>
+                <option>Limpieza Facial</option>
+                <option>Plasma Rico en Plaquetas</option>
+                <option>Dermapen (Microagujas)</option>
+                <option>Tratamiento Corporal</option>
+                <option>Otro</option>
+              </select>
+            </div>
+
+            <!-- Botón -->
+            <div class="col-12 text-center mt-3">
+              <button type="button" class="btn btn-form-submit" id="btnWhatsapp">
+                <i class="bi bi-whatsapp me-2"></i>
+                Enviar por WhatsApp
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 </main>
 
