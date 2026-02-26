@@ -6,675 +6,634 @@
     <title>ARMÓNICA | Centro de Cosmetología</title>
 
     <!-- Bootstrap CSS -->
-    <link 
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-      rel="stylesheet">
-     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-        rel="stylesheet"
-          />
-          <!-- Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
- 
+
     <!-- Estilos propios -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-
 <body>
 
-    <header>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/logo.png" alt="ARMÓNICA Logo" class="logo-armonica me-2">
+          <div class="brand-text">
+            <span class="brand-title">ARMÓNICA</span>
+            <span class="brand-subtitle">Centro de Cosmetología</span>
+          </div>
+        </a>
+
+        <!-- Botón hamburguesa (móvil) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profesionales">Profesionales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resultados">Resultados</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-agendar ms-lg-3" href="#cita">Agendar cita</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- Texto -->
+          <div class="col-md-6">
+            <h1 class="hero-title">
+              Realza tu belleza en manos de expertos
+            </h1>
+            <p class="hero-subtext">
+              Conoce nuestros servicios especializados y reserva tu cita desde la comodidad de tu hogar. Atención personalizada y profesional al alcance de un clic.
+            </p>
+            <div class="d-flex flex-column flex-md-row gap-3">
+              <a href="#cita" class="btn btn-agendar">Agendar cita</a>
+              <a href="#servicios" class="btn btn-outline-rosa">Consultar servicios</a>
+            </div>
+          </div>
+
+          <!-- Imagen -->
+          <div class="col-md-6">
+            <img src="img/hero.jpg" class="img-fluid rounded" alt="Tratamiento estético profesional">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="services-section">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="section-title">Nuestros servicios</h2>
+          <p class="section-subtitle">
+            Descubre nuestros tratamientos estéticos diseñados para realzar tu belleza natural y mejorar tu bienestar.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Tarjeta 1 -->
+          <div class="col-md-4 d-flex">
+            <div class="service-card w-100">
+              <img src="img/armonizacion.jpg" class="service-img" alt="Armonización Facial">
+              <h4>Armonización Facial</h4>
+              <p>Ácido hialurónico, toxina botulínica/Botox, hilos tensores y bioestimuladores híbridos (Profhilo, Radiesse, Sculptra).</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="col-md-4 d-flex">
+            <div class="service-card w-100">
+              <img src="img/facial.jpg" class="service-img" alt="Tratamientos Faciales">
+              <h4>Tratamientos Faciales</h4>
+              <p>Limpiezas faciales, plasma rico en plaquetas faciales, corporales y capilares, Dermapen (microagujas) e hidratación profunda.</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div class="col-md-4 d-flex">
+            <div class="service-card w-100">
+              <img src="img/corporal.jpg" class="service-img" alt="Tratamientos Corporales">
+              <h4>Tratamientos Corporales</h4>
+              <p>Hilos tensores corporales, tonificación y rejuvenecimiento en escote, brazos, abdomen, glúteos y piernas, masajes postoperatorios.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="products-section">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="section-title">Productos que ofrecemos</h2>
+          <p class="section-subtitle">
+            En ARMÓNICA, seleccionamos productos de alta calidad para el cuidado de tu piel y bienestar.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Tarjeta 1 -->
+          <div class="col-md-4 d-flex">
+            <div class="product-card w-100">
+              <img src="img/hidratacion.jpg" class="product-img" alt="Hidratación y Cuidado Facial">
+              <h4>Hidratación y Cuidado Facial</h4>
+              <p>Sueros antiedad, cremas con ácido hialurónico, contorno de ojos y fotoprotectores FPS 50+ para mantener tu piel radiante.</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="col-md-4 d-flex">
+            <div class="product-card w-100">
+              <img src="img/tratamientos.jpg" class="product-img" alt="Tratamientos Corporales">
+              <h4>Tratamientos Corporales</h4>
+              <p>Aceites para masajes, geles reductores y cremas anticelulíticas con aminofilina y cafeína para potenciar tus resultados.</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div class="col-md-4 d-flex">
+            <div class="product-card w-100">
+              <img src="img/peeling.jpg" class="product-img" alt="Peeling y Renovación">
+              <h4>Peeling y Renovación</h4>
+              <p>Ácidos glicólico, láctico y mandélico, peelings enzimáticos y exfoliantes profesionales para renovar y rejuvenecer tu piel.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESIONALES -->
+    <section id="profesionales" class="professionals-section">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="section-title">Profesionales certificados</h2>
+          <p class="section-subtitle">
+            Nuestro equipo cuenta con amplia experiencia y certificaciones en cosmetología y medicina estética.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- Profesional 1 -->
+          <div class="col-md-4 d-flex">
+            <div class="professional-card w-100">
+              <img src="img/profesional1.jpg" class="professional-img" alt="Johana Mora">
+              <h4>Johana Mora</h4>
+              <span class="professional-title">Cosmetóloga</span>
+              <p>Diplomado en inyectología y procedimientos mínimamente invasivos. Más de 9 años de experiencia.</p>
+            </div>
+          </div>
+
+          <!-- Profesional 2 -->
+          <div class="col-md-4 d-flex">
+            <div class="professional-card w-100">
+              <img src="img/profesional2.jpg" class="professional-img" alt="Tatiana Borja">
+              <h4>Tatiana Borja</h4>
+              <span class="professional-title">Odontóloga &amp; Cosmiatra</span>
+              <p>Especialista en armonización orofacial y procedimientos médico estéticos. 5 años de experiencia.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTALACIONES -->
+    <section id="instalaciones" class="instalaciones-section py-5">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="section-title">Conoce nuestras instalaciones</h2>
+          <p class="section-subtitle">
+            Espacios diseñados para brindarte comodidad, seguridad y bienestar.
+          </p>
+        </div>
+
+        <div id="instalacionesCarousel" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner rounded-4 shadow">
+            <div class="carousel-item active">
+              <img src="img/instalaciones1.jpeg" class="d-block w-100" alt="Instalación 1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/instalaciones3.jpeg" class="d-block w-100" alt="Instalación 2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/instalaciones4.jpeg" class="d-block w-100" alt="Instalación 3">
+            </div>
+            <div class="carousel-item">
+              <img src="img/instalaciones2.jpeg" class="d-block w-100" alt="Instalación 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/instalaciones6.jpeg" class="d-block w-100" alt="Instalación 5">
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <h4>Encuéntranos en Bogotá</h4>
+            <p>Carrera 72a Bis A # 10b-70, Villa Alsacia (Castilla) Bogotá, Colombia</p>
+            <a href="https://www.google.com/maps/search/Carrera+72a+Bis+A+10b-70+Villa+Alsacia+Bogota" target="_blank" class="btn btn-outline-rosa">
+              Cómo llegar
+            </a>
+          </div>
+
+          <!-- Botones -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#instalacionesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#instalacionesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section id="resultados" class="results-section">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="section-title">Resultados reales</h2>
+          <p class="section-subtitle">
+            Antes y después de algunos de nuestros tratamientos estéticos.
+          </p>
+        </div>
+
+        <div id="resultadosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="resultado-card mx-auto">
+                <img src="img/resultado1.jpg" alt="Relleno de Labios" class="resultado-img">
+                <p class="resultado-label">Relleno de Labios</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="resultado-card mx-auto">
+                <img src="img/resultado2.jpg" alt="Botox" class="resultado-img">
+                <p class="resultado-label">Botox</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="resultado-card mx-auto">
+                <img src="img/resultado3.jpg" alt="Rinomodelación" class="resultado-img">
+                <p class="resultado-label">Rinomodelación</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="resultado-card mx-auto">
+                <img src="img/resultado4.jpg" alt="Rinomodelación" class="resultado-img">
+                <p class="resultado-label">Rinomodelación</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="resultado-card mx-auto">
+                <img src="img/resultado5.jpg" alt="Hilos tensores" class="resultado-img">
+                <p class="resultado-label">Hilos tensores</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="resultado-card mx-auto">
+                <img src="img/resultado6.jpg" alt="Rinomodelación" class="resultado-img">
+                <p class="resultado-label">Rinomodelación</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Indicadores -->
+          <div class="carousel-indicators resultado-indicators">
+            <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="0" class="active" aria-label="Resultado 1"></button>
+            <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="1" aria-label="Resultado 2"></button>
+            <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="2" aria-label="Resultado 3"></button>
+            <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="3" aria-label="Resultado 4"></button>
+            <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="4" aria-label="Resultado 5"></button>
+            <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="5" aria-label="Resultado 6"></button>
+          </div>
+
+        </div>
+
+        <p class="results-disclaimer text-center mt-4">
+          * Las imágenes corresponden a resultados reales obtenidos en clientas del centro y se presentan con fines informativos.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section id="experiencias" class="reviews-section">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="section-title">Experiencias de nuestras clientas</h2>
+          <p class="section-subtitle">
+            La satisfacción de nuestras clientas nos respalda.
+          </p>
+          <div class="reviews-rating mt-3">
+            <span class="rating-number">5.0</span>
+            <div class="rating-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <span class="rating-source">Basado en reseñas de Google</span>
+          </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- Reseña 1 -->
+          <div class="col-md-4 d-flex">
+            <div class="review-card w-100">
+              <div class="review-header">
+                <div class="review-avatar">M</div>
+                <div>
+                  <p class="review-name">María González</p>
+                  <div class="review-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <img src="https://www.google.com/favicon.ico" class="google-icon" alt="Google">
+              </div>
+              <p class="review-text">"Excelente atención, Johana es muy profesional y los resultados superaron mis expectativas. El ambiente es muy agradable y te hacen sentir segura."</p>
+              <span class="review-date">Hace 2 semanas</span>
+            </div>
+          </div>
+
+          <!-- Reseña 2 -->
+          <div class="col-md-4 d-flex">
+            <div class="review-card w-100">
+              <div class="review-header">
+                <div class="review-avatar">L</div>
+                <div>
+                  <p class="review-name">Laura Martínez</p>
+                  <div class="review-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <img src="https://www.google.com/favicon.ico" class="google-icon" alt="Google">
+              </div>
+              <p class="review-text">"Me realizé la armonización facial con Tatiana y quedé encantada. Muy buena mano, explicó todo el procedimiento y los cuidados post-tratamiento."</p>
+              <span class="review-date">Hace 1 mes</span>
+            </div>
+          </div>
+
+          <!-- Reseña 3 -->
+          <div class="col-md-4 d-flex">
+            <div class="review-card w-100">
+              <div class="review-header">
+                <div class="review-avatar">S</div>
+                <div>
+                  <p class="review-name">Sara Rodríguez</p>
+                  <div class="review-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <img src="https://www.google.com/favicon.ico" class="google-icon" alt="Google">
+              </div>
+              <p class="review-text">"El mejor centro estético que he visitado en Bogotá. El trato es muy personalizado, se nota que les importa el bienestar de sus clientas. 100% recomendado."</p>
+              <span class="review-date">Hace 3 semanas</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section id="cita" class="form-section">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="section-title">Agenda tu cita</h2>
+          <p class="section-subtitle">
+            Déjanos tus datos y nos pondremos en contacto contigo a la brevedad.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="form-card">
+
+              <div class="row g-3">
+
+                <!-- Nombre -->
+                <div class="col-md-6">
+                  <label class="form-label">Nombre *</label>
+                  <input type="text" class="form-control form-input" placeholder="Tu nombre">
+                </div>
+
+                <!-- Apellido -->
+                <div class="col-md-6">
+                  <label class="form-label">Apellido *</label>
+                  <input type="text" class="form-control form-input" placeholder="Tu apellido">
+                </div>
+
+                <!-- Correo -->
+                <div class="col-md-6">
+                  <label class="form-label">Correo electrónico *</label>
+                  <input type="email" class="form-control form-input" placeholder="tucorreo@email.com">
+                </div>
+
+                <!-- Teléfono -->
+                <div class="col-md-6">
+                  <label class="form-label">Número de teléfono *</label>
+                  <input type="tel" class="form-control form-input" placeholder="+57 300 000 0000">
+                </div>
+
+                <!-- Procedimiento -->
+                <div class="col-12">
+                  <label class="form-label">¿En qué procedimiento estás interesada? *</label>
+                  <select class="form-select form-input">
+                    <option value="" disabled selected>Selecciona un procedimiento</option>
+                    <option>Armonización Facial</option>
+                    <option>Ácido Hialurónico</option>
+                    <option>Toxina Botulínica / Botox</option>
+                    <option>Hilos Tensores</option>
+                    <option>Bioestimuladores (Profhilo, Radiesse, Sculptra)</option>
+                    <option>Limpieza Facial</option>
+                    <option>Plasma Rico en Plaquetas</option>
+                    <option>Dermapen (Microagujas)</option>
+                    <option>Tratamiento Corporal</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+
+                <!-- Botón -->
+                <div class="col-12 text-center mt-3">
+                  <button type="button" class="btn btn-form-submit" id="btnWhatsapp">
+                    <i class="bi bi-whatsapp me-2"></i>
+                    Enviar por WhatsApp
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
     <div class="container">
 
-      
-     <a class="navbar-brand d-flex align-items-center" href="#">
+      <div class="row g-4">
 
-      <!-- Logo -->
-      <img src="img/logo.png" 
-      alt="ARMÓNICA Logo"
-      class="logo-armonica me-2">
-
-
-
-      <!-- Texto -->
-      <div class="brand-text">
-      <span class="brand-title">ARMÓNICA</span>
-      <span class="brand-subtitle">Centro de Cosmetología</span>
-      </div>
-
-      </a>
-
-
-
-      <!-- Botón hamburguesa (móvil) -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Enlaces -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#servicios">Servicios</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#productos">Productos</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#profesionales">Profesionales</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#resultados">Resultados</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="btn btn-agendar ms-lg-3" href="#cita">
-              Agendar cita
+        <!-- Columna 1 — Logo y descripción -->
+        <div class="col-md-3 mb-3">
+          <div class="d-flex align-items-center mb-3">
+            <img src="img/logo.png" alt="ARMÓNICA Logo" style="height:50px; width:auto;">
+            <div class="ms-2">
+              <span class="footer-brand-title">ARMÓNICA</span><br>
+              <span class="footer-brand-subtitle">Centro de Cosmetología</span>
+            </div>
+          </div>
+          <p class="footer-text">
+            Atención profesional y personalizada enfocada en el bienestar y cuidado integral de tu piel.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/armonica_cosmetologia" target="_blank" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
             </a>
-          </li>
+            <a href="https://wa.me/573227132918" target="_blank" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
 
-        </ul>
+        <!-- Columna 2 — Enlaces rápidos -->
+        <div class="col-md-3 mb-3">
+          <h6 class="footer-title">Enlaces Rápidos</h6>
+          <ul class="footer-links">
+            <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Servicios</a></li>
+            <li><a href="#productos"><i class="bi bi-chevron-right"></i> Productos</a></li>
+            <li><a href="#profesionales"><i class="bi bi-chevron-right"></i> Profesionales</a></li>
+            <li><a href="#resultados"><i class="bi bi-chevron-right"></i> Resultados</a></li>
+            <li><a href="#cita"><i class="bi bi-chevron-right"></i> Agendar cita</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3 — Servicios -->
+        <div class="col-md-3 mb-3">
+          <h6 class="footer-title">Nuestros Servicios</h6>
+          <ul class="footer-links">
+            <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Armonización Facial</a></li>
+            <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Ácido Hialurónico</a></li>
+            <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Toxina Botulínica</a></li>
+            <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Hilos Tensores</a></li>
+            <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Tratamientos Corporales</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4 — Contacto -->
+        <div class="col-md-3 mb-3">
+          <h6 class="footer-title">Contacto</h6>
+          <ul class="footer-contact">
+            <li>
+              <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <strong>Dirección</strong>
+                <p>Carrera 72a Bis A # 10b-70, Villa Alsacia, Bogotá</p>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <strong>Teléfono</strong>
+                <p>322 713 2918</p>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <strong>Email</strong>
+                <p>armonicacentrodecosmetologia@gmail.com</p>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <strong>Horario</strong>
+                <p>Lun - Sáb: 8:00 AM - 6:00 PM</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </div>
-    </div>
-  </nav>
-</header>
-<main>
 
-  <!-- HERO -->
-<section class="hero-section">
-  <div class="container">
-    <div class="row align-items-center">
+      <hr class="footer-divider">
 
-      <!-- Texto -->
-      <div class="col-md-6">
-        <h1 class="hero-title">
-          Realza tu belleza en manos de expertos
-        </h1>
-
-        <p class="hero-subtext">
-          Conoce nuestros servicios especializados y reserva tu cita desde la comodidad de tu hogar. Atención personalizada y profesional al alcance de un clic.
+      <div class="text-center">
+        <p class="footer-copy">
+          &copy; 2026 ARMÓNICA Centro de Cosmetología. Todos los derechos reservados.
         </p>
-
-        <div class="d-flex flex-column flex-md-row gap-3">
-          <a href="#cita" class="btn btn-agendar">Agendar cita</a>
-          <a href="#servicios" class="btn btn-outline-rosa">Consultar servicios</a>
-        </div>
-      </div>
-
-      <!-- Imagen -->
-      <div class="col-md-6">
-        <img src="img/hero.jpg" 
-             class="img-fluid rounded" 
-             alt="Tratamiento estético profesional">
       </div>
 
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- SERVICIOS -->
-<section id="servicios" class="services-section">
-  <div class="container">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div class="text-center mb-5">
-      <h2 class="section-title">Nuestros servicios</h2>
-      <p class="section-subtitle">
-        Descubre nuestros tratamientos estéticos diseñados para realzar tu belleza natural y mejorar tu bienestar.
-      </p>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- Tarjeta 1 -->
-      <div class="col-md-4 d-flex">
-        <div class="service-card w-100">
-          <img src="img/armonizacion.jpg" class="service-img img-armonizacion" alt="Armonización Facial">
-          <h4>Armonización Facial</h4>
-          <p>Ácido hialurónico, toxina botulínica/Botox, hilos tensores y bioestimuladores híbridos (Profhilo, Radiesse, Sculptra).</p>
-        </div>
-      </div>
-
-      <!-- Tarjeta 2 -->
-      <div class="col-md-4 d-flex">
-        <div class="service-card w-100">
-          <img src="img/facial.jpg" class="service-img" alt="Tratamientos Faciales">
-          <h4>Tratamientos Faciales</h4>
-          <p>Limpiezas faciales, plasma rico en plaquetas faciales, corporales y capilares, Dermapen (microagujas) e hidratación profunda.</p>
-        </div>
-      </div>
-
-      <!-- Tarjeta 3 -->
-      <div class="col-md-4 d-flex">
-        <div class="service-card w-100">
-          <img src="img/corporal.jpg" class="service-img" alt="Tratamientos Corporales">
-          <h4>Tratamientos Corporales</h4>
-          <p>Hilos tensores corporales, tonificación y rejuvenecimiento en escote, brazos, abdomen, glúteos y piernas, masajes postoperatorios.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- PRODUCTOS -->
-<section id="productos" class="products-section">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="section-title">Productos que ofrecemos</h2>
-      <p class="section-subtitle">
-        En ARMÓNICA, seleccionamos productos de alta calidad para el cuidado de tu piel y bienestar.
-      </p>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- Tarjeta 1 -->
-      <div class="col-md-4 d-flex">
-        <div class="product-card w-100">
-          <img src="img/hidratacion.jpg" class="product-img" alt="Hidratación y Cuidado Facial">
-          <h4>Hidratación y Cuidado Facial</h4>
-          <p>Sueros antiedad, cremas con ácido hialurónico, contorno de ojos y fotoprotectores FPS 50+ para mantener tu piel radiante.</p>
-        </div>
-      </div>
-
-      <!-- Tarjeta 2 -->
-      <div class="col-md-4 d-flex">
-        <div class="product-card w-100">
-          <img src="img/tratamientos.jpg" class="product-img" alt="Tratamientos Corporales">
-          <h4>Tratamientos Corporales</h4>
-          <p>Aceites para masajes, geles reductores y cremas anticelulíticas con aminofilina y cafeína para potenciar tus resultados.</p>
-        </div>
-      </div>
-
-      <!-- Tarjeta 3 -->
-      <div class="col-md-4 d-flex">
-        <div class="product-card w-100">
-          <img src="img/peeling.jpg" class="product-img" alt="Peeling y Renovación">
-          <h4>Peeling y Renovación</h4>
-          <p>Ácidos glicólico, láctico y mandélico, peelings enzimáticos y exfoliantes profesionales para renovar y rejuvenecer tu piel.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
- <!-- PROFESIONALES -->
-<section id="profesionales" class="professionals-section">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="section-title">Profesionales certificados</h2>
-      <p class="section-subtitle">
-        Nuestro equipo cuenta con amplia experiencia y certificaciones en cosmetología y medicina estética.
-      </p>
-    </div>
-
-    <div class="row g-4 justify-content-center">
-
-      <!-- Profesional 1 -->
-      <div class="col-md-4 d-flex">
-        <div class="professional-card w-100">
-          <img src="img/profesional1.jpg" class="professional-img" alt="Johana Mora">
-          <h4>Johana Mora</h4>
-          <span class="professional-title">Cosmetóloga</span>
-          <p>Diplomado en inyectología y procedimientos mínimamente invasivos. Más de 9 años de experiencia.</p>
-        </div>
-      </div>
-
-      <!-- Profesional 2 -->
-      <div class="col-md-4 d-flex">
-        <div class="professional-card w-100">
-          <img src="img/profesional2.jpg" class="professional-img" alt="Tatiana Borja">
-          <h4>Tatiana Borja</h4>
-          <span class="professional-title">Odontóloga & Cosmiatra</span>
-          <p>Especialista en armonización orofacial y procedimientos médico estéticos. 5  años de experiencia.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- INSTALACIONES -->
-<section id="instalaciones" class="instalaciones-section py-5">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="section-title">Conoce nuestras instalaciones</h2>
-      <p class="section-subtitle">
-        Espacios diseñados para brindarte comodidad, seguridad y bienestar.
-      </p>
-    </div>
-
-    <!-- Slider -->
-    <div id="instalacionesCarousel" class="carousel slide" data-bs-ride="carousel">
-
-      <div class="carousel-inner rounded-4 shadow">
-
-        <div class="carousel-item active">
-          <img src="img/instalaciones1.jpeg" class="d-block w-100" alt="Instalación 1">
-        </div>
-
-        <div class="carousel-item">
-          <img src="img/instalaciones3.jpeg" class="d-block w-100" alt="Instalación 2">
-        </div>
-
-        <div class="carousel-item">
-          <img src="img/instalaciones4.jpeg" class="d-block w-100" alt="Instalación 3">
-        </div>
-        <div class="carousel-item">
-          <img src="img/instalaciones2.jpeg" class="d-block w-100" alt="Instalación 2">
-        </div>
-        <div class="carousel-item">
-          <img src="img/instalaciones6.jpeg" class="d-block w-100" alt="Instalación 2">
-        </div>
-      </div>
-      <div class="text-center mt-5">
-  <h4>Encuéntranos en Bogotá</h4>
-  <p>Carrera 72a Bis A # 10b-70, Villa Alsacia (Castilla) Bogotá, Colombia</p>
-  <a href="https://www.google.com/maps" target="_blank" class="btn btn-outline-rosa">
-    Cómo llegar
-  </a>
-</div>
-
-
-      <!-- Botones -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#instalacionesCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-
-      <button class="carousel-control-next" type="button" data-bs-target="#instalacionesCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- RESULTADOS -->
-<section id="resultados" class="results-section">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="section-title">Resultados reales</h2>
-      <p class="section-subtitle">
-        Antes y después de algunos de nuestros tratamientos estéticos.
-      </p>
-    </div>
-
-    <div id="resultadosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-
-      <div class="carousel-inner">
-
-        <div class="carousel-item active">
-          <div class="resultado-card mx-auto">
-            <img src="img/resultado1.jpg" alt="Relleno de Labios" class="resultado-img">
-            <p class="resultado-label">Relleno de Labios</p>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="resultado-card mx-auto">
-            <img src="img/resultado2.jpg" alt="Botox" class="resultado-img">
-            <p class="resultado-label">Botox</p>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="resultado-card mx-auto">
-            <img src="img/resultado3.jpg" alt="Rinomodelación" class="resultado-img">
-            <p class="resultado-label">Rinomodelación</p>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="resultado-card mx-auto">
-            <img src="img/resultado4.jpg" alt="Rinomodelación" class="resultado-img">
-            <p class="resultado-label">Rinomodelación</p>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="resultado-card mx-auto">
-            <img src="img/resultado5.jpg" alt="Hilos tensores" class="resultado-img">
-            <p class="resultado-label">Hilos tensores</p>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="resultado-card mx-auto">
-            <img src="img/resultado6.jpg" alt="Rinomodelación" class="resultado-img">
-            <p class="resultado-label">Rinomodelación</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Indicadores -->
-      <div class="carousel-indicators resultado-indicators">
-        <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="3"></button>
-        <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="4"></button>
-        <button type="button" data-bs-target="#resultadosCarousel" data-bs-slide-to="5"></button>
-      </div>
-
-    </div>
-
-    <p class="results-disclaimer text-center mt-4">
-      * Las imágenes corresponden a resultados reales obtenidos en clientas del centro y se presentan con fines informativos.
-    </p>
-
-  </div>
-</section>
-  
-
-  <!-- RESEÑAS -->
-<section id="experiencias" class="reviews-section">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="section-title">Experiencias de nuestras clientas</h2>
-      <p class="section-subtitle">
-        La satisfacción de nuestras clientas nos respalda.
-      </p>
-      <!-- Rating general -->
-      <div class="reviews-rating mt-3">
-        <span class="rating-number">5.0</span>
-        <div class="rating-stars">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-        <span class="rating-source">Basado en reseñas de Google</span>
-      </div>
-    </div>
-
-    <div class="row g-4 justify-content-center">
-
-      <!-- Reseña 1 -->
-      <div class="col-md-4 d-flex">
-        <div class="review-card w-100">
-          <div class="review-header">
-            <div class="review-avatar">M</div>
-            <div>
-              <p class="review-name">María González</p>
-              <div class="review-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-            </div>
-            <img src="https://www.google.com/favicon.ico" class="google-icon" alt="Google">
-          </div>
-          <p class="review-text">"Excelente atención, Johana es muy profesional y los resultados superaron mis expectativas. El ambiente es muy agradable y te hacen sentir segura."</p>
-          <span class="review-date">Hace 2 semanas</span>
-        </div>
-      </div>
-
-      <!-- Reseña 2 -->
-      <div class="col-md-4 d-flex">
-        <div class="review-card w-100">
-          <div class="review-header">
-            <div class="review-avatar">L</div>
-            <div>
-              <p class="review-name">Laura Martínez</p>
-              <div class="review-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-            </div>
-            <img src="https://www.google.com/favicon.ico" class="google-icon" alt="Google">
-          </div>
-          <p class="review-text">"Me realizé la armonización facial con Tatiana y quedé encantada. Muy buena mano, explicó todo el procedimiento y los cuidados post-tratamiento."</p>
-          <span class="review-date">Hace 1 mes</span>
-        </div>
-      </div>
-
-      <!-- Reseña 3 -->
-      <div class="col-md-4 d-flex">
-        <div class="review-card w-100">
-          <div class="review-header">
-            <div class="review-avatar">S</div>
-            <div>
-              <p class="review-name">Sara Rodríguez</p>
-              <div class="review-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-            </div>
-            <img src="https://www.google.com/favicon.ico" class="google-icon" alt="Google">
-          </div>
-          <p class="review-text">"El mejor centro estético que he visitado en Bogotá. El trato es muy personalizado, se nota que les importa el bienestar de sus clientas. 100% recomendado."</p>
-          <span class="review-date">Hace 3 semanas</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- FORMULARIO -->
-<section id="cita" class="form-section">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="section-title">Agenda tu cita</h2>
-      <p class="section-subtitle">
-        Déjanos tus datos y nos pondremos en contacto contigo a la brevedad.
-      </p>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="form-card">
-
-          <div class="row g-3">
-
-            <!-- Nombre -->
-            <div class="col-md-6">
-              <label class="form-label">Nombre *</label>
-              <input type="text" class="form-control form-input" placeholder="Tu nombre">
-            </div>
-
-            <!-- Apellido -->
-            <div class="col-md-6">
-              <label class="form-label">Apellido *</label>
-              <input type="text" class="form-control form-input" placeholder="Tu apellido">
-            </div>
-
-            <!-- Correo -->
-            <div class="col-md-6">
-              <label class="form-label">Correo electrónico *</label>
-              <input type="email" class="form-control form-input" placeholder="tucorreo@email.com">
-            </div>
-
-            <!-- Teléfono -->
-            <div class="col-md-6">
-              <label class="form-label">Número de teléfono *</label>
-              <input type="tel" class="form-control form-input" placeholder="+57 300 000 0000">
-            </div>
-
-            <!-- Procedimiento -->
-            <div class="col-12">
-              <label class="form-label">¿En qué procedimiento estás interesada? *</label>
-              <select class="form-select form-input">
-                <option value="" disabled selected>Selecciona un procedimiento</option>
-                <option>Armonización Facial</option>
-                <option>Ácido Hialurónico</option>
-                <option>Toxina Botulínica / Botox</option>
-                <option>Hilos Tensores</option>
-                <option>Bioestimuladores (Profhilo, Radiesse, Sculptra)</option>
-                <option>Limpieza Facial</option>
-                <option>Plasma Rico en Plaquetas</option>
-                <option>Dermapen (Microagujas)</option>
-                <option>Tratamiento Corporal</option>
-                <option>Otro</option>
-              </select>
-            </div>
-
-            <!-- Botón -->
-            <div class="col-12 text-center mt-3">
-              <button type="button" class="btn btn-form-submit" id="btnWhatsapp">
-                <i class="bi bi-whatsapp me-2"></i>
-                Enviar por WhatsApp
-              </button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-</main>
-
-<footer class="footer">
-  <div class="container">
-
-    <div class="row g-4">
-
-      <!-- Columna 1 — Logo y descripción -->
-      <div class="col-md-3 mb-3">
-        <div class="d-flex align-items-center mb-3">
-          <img src="img/logo.png" alt="ARMÓNICA Logo" style="height:50px; width:auto;">
-          <div class="ms-2">
-            <span class="footer-brand-title">ARMÓNICA</span><br>
-            <span class="footer-brand-subtitle">Centro de Cosmetología</span>
-          </div>
-        </div>
-        <p class="footer-text">
-          Atención profesional y personalizada enfocada en el bienestar y cuidado integral de tu piel.
-        </p>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/armonica_cosmetologia" target="_blank">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a href="https://wa.me/573227132918" target="_blank">
-            <i class="bi bi-whatsapp"></i>
-          </a>
-          <a href="#" target="_blank">
-            <i class="bi bi-facebook"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Columna 2 — Enlaces rápidos -->
-      <div class="col-md-3 mb-3">
-        <h6 class="footer-title">Enlaces Rápidos</h6>
-        <ul class="footer-links">
-          <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Servicios</a></li>
-          <li><a href="#productos"><i class="bi bi-chevron-right"></i> Productos</a></li>
-          <li><a href="#profesionales"><i class="bi bi-chevron-right"></i> Profesionales</a></li>
-          <li><a href="#resultados"><i class="bi bi-chevron-right"></i> Resultados</a></li>
-          <li><a href="#cita"><i class="bi bi-chevron-right"></i> Agendar cita</a></li>
-        </ul>
-      </div>
-
-      <!-- Columna 3 — Servicios -->
-      <div class="col-md-3 mb-3">
-        <h6 class="footer-title">Nuestros Servicios</h6>
-        <ul class="footer-links">
-          <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Armonización Facial</a></li>
-          <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Ácido Hialurónico</a></li>
-          <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Toxina Botulínica</a></li>
-          <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Hilos Tensores</a></li>
-          <li><a href="#servicios"><i class="bi bi-chevron-right"></i> Tratamientos Corporales</a></li>
-        </ul>
-      </div>
-
-      <!-- Columna 4 — Contacto -->
-      <div class="col-md-3 mb-3">
-        <h6 class="footer-title">Contacto</h6>
-        <ul class="footer-contact">
-          <li>
-            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
-            <div>
-              <strong>Dirección</strong>
-              <p>Carrera 72a Bis A # 10b-70, Villa Alsacia, Bogotá</p>
-            </div>
-          </li>
-          <li>
-            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
-            <div>
-              <strong>Teléfono</strong>
-              <p>322 713 2918</p>
-            </div>
-          </li>
-          <li>
-            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
-            <div>
-              <strong>Email</strong>
-              <p>armonicacentrodecosmetologia@gmail.com</p>
-            </div>
-          </li>
-          <li>
-            <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
-            <div>
-              <strong>Horario</strong>
-              <p>Lun - Sáb: 8:00 AM - 6:00 PM</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-    <hr class="footer-divider">
-
-    <div class="text-center">
-      <p class="footer-copy">
-        © 2026 ARMÓNICA Centro de Cosmetología. Todos los derechos reservados.
-      </p>
-    </div>
-
-  </div>
-</footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-   
   <!-- Botón flotante de WhatsApp -->
-<a
-  href="https://wa.me/573227132918"
-  class="whatsapp-float"
-  target="_blank"
-  aria-label="Contáctanos por WhatsApp"
->
-  <i class="bi bi-whatsapp"></i>
-</a>
+  <a href="https://wa.me/573227132918" class="whatsapp-float" target="_blank" aria-label="Contáctanos por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
 
+  <!-- JavaScript propio -->
+  <script src="js/main.js"></script>
 
-   <!-- JavaScript propio -->
-    <script src="js/main.js"></script>
-
-  
 </body>
 </html>
-
