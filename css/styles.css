@@ -2,7 +2,6 @@
    ESTILOS GENERALES
 ========================= */
 
-
 body {
   background-color: #F9EFEF;
   font-family: 'Poppins', sans-serif;
@@ -11,43 +10,34 @@ body {
   color: #4A4A4A;
 }
 
-
-/* Títulos principales */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   color: #7B3F4A;
 }
 
-/* Párrafos */
 p {
   line-height: 2.0;
   color: #4A4A4A;
 }
 
 /* =========================
-   NAVBAR ARMÓNICA
+   NAVBAR
 ========================= */
 
 .navbar {
   background-color: #ffffff;
-   border-bottom: 1.5px solid #D48FA6;
+  border-bottom: 1.5px solid #D48FA6;
   box-shadow: 0 4px 20px rgba(123, 63, 74, 0.08);
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
 .logo-armonica {
   height: 45px;
   width: auto;
   object-fit: contain;
 }
 
-/* Links del menú */
-.navbar .nav-link {
-  color: #7B3F4A;
-  font-weight: 500;
-  margin-right: 15px;
-}
-/* Texto marca */
 .brand-text {
   display: flex;
   flex-direction: column;
@@ -67,11 +57,20 @@ p {
   letter-spacing: 1px;
 }
 
+.navbar .nav-link {
+  color: #7B3F4A;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
 .navbar .nav-link:hover {
   color: #D48FA6;
 }
 
-/* Botón Agendar */
+/* =========================
+   BOTONES
+========================= */
+
 .btn-agendar {
   background-color: #7C8C6B;
   color: white;
@@ -86,6 +85,18 @@ p {
   color: white;
 }
 
+.btn-outline-rosa {
+  border: 2px solid #d48fa6;
+  color: #d48fa6;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-rosa:hover {
+  background-color: #d48fa6;
+  color: white;
+}
 
 /* =========================
    BOTÓN FLOTANTE WHATSAPP
@@ -111,38 +122,8 @@ p {
   font-size: 28px;
 }
 
-
 /* =========================
-   HERO 
-========================= */
-
-.hero-section {
-  padding: 80px 0 20px 0; /* arriba | derecha | abajo | izquierda */
-  background: linear-gradient(
-    to right,
-    #f9efef 60%,
-    rgba(249, 239, 239, 0.6)
-  );
-}
-
-.hero-title {
-  font-size: 4.0rem;
-  font-weight: 600;
-  color: #a64d6d;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.hero-subtext {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 35px;
-  max-width: 500px;
-}
-
-
-/* =========================
-   HERO 
+   HERO
 ========================= */
 
 .hero-section {
@@ -165,16 +146,12 @@ p {
   max-width: 500px;
 }
 
-/* Agrega esto a tu CSS */
 .hero-section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   max-height: 500px;
 }
-/* =========================
-   BOTONES HERO
-========================= */
 
 .hero-section .btn-agendar {
   background-color: #7c8c6b;
@@ -189,47 +166,21 @@ p {
   background-color: #6b7b5c;
 }
 
-.btn-outline-rosa {
-  border: 2px solid #d48fa6;
-  color: #d48fa6;
-  border-radius: 30px;
-  padding: 10px 25px;
-  transition: all 0.3s ease;
-}
-
-.btn-outline-rosa:hover {
-  background-color: #d48fa6;
-  color: white;
-}
-
 /* =========================
-   BOTONES HERO
+   TÍTULOS DE SECCIÓN
 ========================= */
 
-.hero-section .btn-agendar {
-  background-color: #7c8c6b;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 30px;
-  font-weight: 500;
-  color: white;
+.section-title {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
-.hero-section .btn-agendar:hover {
-  background-color: #6b7b5c;
-}
-
-.btn-outline-rosa {
-  border: 2px solid #d48fa6;
-  color: #d48fa6;
-  border-radius: 30px;
-  padding: 10px 25px;
-  transition: all 0.3s ease;
-}
-
-.btn-outline-rosa:hover {
-  background-color: #d48fa6;
-  color: white;
+.section-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.05rem;
 }
 
 /* =========================
@@ -240,26 +191,7 @@ p {
   padding: 80px 0;
   background-color: #F9EFEF;
   box-shadow: inset 0 15px 20px -10px rgba(212, 143, 166, 0.15);
- }
-
-/* Título principal */
-.section-title {
-  font-size: 2.4rem;
-  margin-bottom: 15px;
-  font-weight: 600;
 }
-
-/* Subtítulo */
-.section-subtitle {
-  max-width: 600px;
-  margin: 0 auto;
-  color: #666;
-  font-size: 1.05rem;
-}
-
-/* =========================
-   TARJETAS
-========================= */
 
 .service-card {
   background-color: white;
@@ -268,11 +200,9 @@ p {
   text-align: center;
   box-shadow: 0 8px 25px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
-
   height: 100%;
   display: flex;
   flex-direction: column;
-
   overflow: hidden;
 }
 
@@ -280,10 +210,6 @@ p {
   transform: translateY(-6px);
   box-shadow: 0 18px 35px rgba(0,0,0,0.08);
 }
-
-/* =========================
-   IMÁGENES
-========================= */
 
 .service-img {
   width: 100%;
@@ -296,10 +222,6 @@ p {
 .service-card:hover .service-img {
   transform: scale(1.03);
 }
-
-/* =========================
-   CONTENIDO
-========================= */
 
 .service-card h4 {
   font-size: 1.35rem;
@@ -369,6 +291,7 @@ p {
   color: #555;
   line-height: 1.7;
 }
+
 /* =========================
    PROFESIONALES
 ========================= */
@@ -428,14 +351,46 @@ p {
   color: #555;
   line-height: 1.7;
 }
+
+/* =========================
+   INSTALACIONES
+========================= */
+
 .instalaciones-section {
-  background-color: #f8f5f6;
+  padding: 80px 0;
+  background-color: #fdf5f5;
 }
 
-.carousel-inner img {
-  height: 450px;
-  object-fit: cover;
+.instalaciones-section .carousel {
+  max-width: 750px;
+  margin: 0 auto;
 }
+
+.instalaciones-section .carousel-inner {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.instalaciones-section .carousel-inner img {
+  height: 420px;
+  object-fit: contain;
+  background-color: #fdf5f5;
+}
+
+.instalaciones-section .carousel-control-prev,
+.instalaciones-section .carousel-control-next {
+  width: 5%;
+}
+
+.instalaciones-section .carousel-control-prev-icon,
+.instalaciones-section .carousel-control-next-icon {
+  background-color: rgba(123, 63, 74, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  background-size: 50%;
+}
+
 /* =========================
    RESULTADOS
 ========================= */
@@ -493,6 +448,7 @@ p {
   color: #999;
   font-style: italic;
 }
+
 /* =========================
    RESEÑAS
 ========================= */
@@ -594,6 +550,7 @@ p {
   color: #aaa;
   margin-top: 10px;
 }
+
 /* =========================
    FORMULARIO
 ========================= */
@@ -648,6 +605,7 @@ p {
   color: white;
   transform: translateY(-2px);
 }
+
 /* =========================
    FOOTER
 ========================= */
@@ -792,4 +750,3 @@ p {
   font-size: 0.82rem;
   margin: 0;
 }
-
