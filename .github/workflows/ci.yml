@@ -1,9 +1,8 @@
- 
 name: CI - Validación ARMÓNICA
 
 on:
   push:
-    branches: [ main ]
+    branches: [ feature/ci-setup, main ]
   pull_request:
     branches: [ main ]
 
