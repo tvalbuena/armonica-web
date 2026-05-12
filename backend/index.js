@@ -1,4 +1,4 @@
- // ===========================
+// ===========================
 // SERVIDOR PRINCIPAL - ARMÓNICA
 // ===========================
 
@@ -6,12 +6,17 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
+const citasRouter = require('./routes/citas');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middlewares
 app.use(cors());
 app.use(express.json());
+
+// Rutas
+app.use('/api/citas', citasRouter);
 
 // Ruta de prueba
 app.get('/', (req, res) => {
