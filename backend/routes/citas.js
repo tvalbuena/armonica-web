@@ -28,4 +28,20 @@ router.post('/', async (req, res) => {
   }
 });
 
+router.get('/', async (req, res) => {
+  try {
+    const resultado = await pool.query(
+      'SELECT * FROM citas ORDER BY fecha_solicitud DESC'
+    );
+
+    res.status(200).json({
+      citas: resultado.rows
+    });
+
+  } catch (error) {
+    console.error('Error al obtener las citas:', error.message);
+    res.status(500).json({ error: 'Error interno del servidor' });
+  }
+});
+
 module.exports = router;
