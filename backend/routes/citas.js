@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const pool = require('../db');
+const verificarToken = require('../middleware/auth');
 
 router.post('/', async (req, res) => {
   const { nombre, apellido, correo, telefono, procedimiento } = req.body;
@@ -28,7 +29,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.get('/', async (req, res) => {
+router.get('/', verificarToken, async (req, res) => {
   try {
     const resultado = await pool.query(
       'SELECT * FROM citas ORDER BY fecha_solicitud DESC'
