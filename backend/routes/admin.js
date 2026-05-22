@@ -3,9 +3,21 @@ const router = express.Router();
 const pool = require('../db');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const rateLimit = require('express-rate-limit');
+
+// Límite de intentos de login
+const loginLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 5,
+  message: {
+    errores: ['Demasiados intentos fallidos. Intenta de nuevo en 15 minutos']
+  },
+  standardHeaders: true,
+  legacyHeaders: false
+});
 
 // POST /api/admin/login
-router.post('/login', async (req, res) => {
+router.post('/login', loginLimiter, async (req, res) => {
   const { usuario, password } = req.body;
 
   if (!usuario || !password) {
