@@ -2,6 +2,21 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../db');
 const verificarToken = require('../middleware/auth');
+const rateLimit = require('express-rate-limit');
+
+// Límite de solicitudes al formulario de citas
+const citasLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 10,
+  standardHeaders: true,
+  legacyHeaders: false,
+  handler: (req, res) => {
+    console.log(`Rate limit alcanzado desde IP: ${req.ip}`);
+    res.status(429).json({
+      errores: ['Demasiadas solicitudes. Intenta de nuevo en 15 minutos']
+    });
+  }
+});
 
 // Procedimientos válidos
 const procedimientosValidos = [
@@ -93,7 +108,7 @@ const validarCita = (nombre, apellido, correo, telefono, procedimiento) => {
   return errores;
 };
 
-router.post('/', async (req, res) => {
+router.post('/', citasLimiter, async (req, res) => {
   const { nombre, apellido, correo, telefono, procedimiento } = req.body;
 
   // Límite de tamaño del body
