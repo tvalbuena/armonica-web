@@ -164,5 +164,33 @@ router.get('/', verificarToken, async (req, res) => {
     res.status(500).json({ error: 'Error interno del servidor' });
   }
 });
+router.patch('/:id', verificarToken, async (req, res) => {
+  const { id } = req.params;
+  const { estado } = req.body;
 
+  const estadosValidos = ['pendiente', 'confirmada', 'cancelada'];
+  if (!estado || !estadosValidos.includes(estado)) {
+    return res.status(400).json({ error: 'Estado no válido' });
+  }
+
+  try {
+    const resultado = await pool.query(
+      'UPDATE citas SET estado = $1 WHERE id = $2 RETURNING *',
+      [estado, id]
+    );
+
+    if (resultado.rows.length === 0) {
+      return res.status(404).json({ error: 'Cita no encontrada' });
+    }
+
+    res.status(200).json({
+      mensaje: 'Estado actualizado correctamente',
+      cita: resultado.rows[0]
+    });
+
+  } catch (error) {
+    console.error('Error al actualizar estado:', error.message);
+    res.status(500).json({ error: 'Error interno del servidor' });
+  }
+});
 module.exports = router;
