@@ -446,79 +446,87 @@
     </section>
 
     <!-- FORMULARIO -->
-    <section id="cita" class="form-section">
-      <div class="container">
+<section id="cita" class="form-section">
+  <div class="container">
 
-        <div class="text-center mb-5">
-          <h2 class="section-title">Agenda tu cita</h2>
-          <p class="section-subtitle">
-            Déjanos tus datos y nos pondremos en contacto contigo a la brevedad.
-          </p>
-        </div>
+    <div class="text-center mb-5">
+      <h2 class="section-title">Agenda tu cita</h2>
+      <p class="section-subtitle">
+        Déjanos tus datos y nos pondremos en contacto contigo a la brevedad.
+      </p>
+    </div>
 
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="form-card">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="form-card">
 
-              <div class="row g-3">
+          <div class="row g-3">
 
-                <!-- Nombre -->
-                <div class="col-md-6">
-                  <label class="form-label">Nombre *</label>
-                  <input type="text" class="form-control form-input" placeholder="Tu nombre">
-                </div>
-
-                <!-- Apellido -->
-                <div class="col-md-6">
-                  <label class="form-label">Apellido *</label>
-                  <input type="text" class="form-control form-input" placeholder="Tu apellido">
-                </div>
-
-                <!-- Correo -->
-                <div class="col-md-6">
-                  <label class="form-label">Correo electrónico *</label>
-                  <input type="email" class="form-control form-input" placeholder="tucorreo@email.com">
-                </div>
-
-                <!-- Teléfono -->
-                <div class="col-md-6">
-                  <label class="form-label">Número de teléfono *</label>
-                  <input type="tel" class="form-control form-input" placeholder="+57 300 000 0000">
-                </div>
-
-                <!-- Procedimiento -->
-                <div class="col-12">
-                  <label class="form-label">¿En qué procedimiento estás interesada? *</label>
-                  <select class="form-select form-input">
-                    <option value="" disabled selected>Selecciona un procedimiento</option>
-                    <option>Armonización Facial</option>
-                    <option>Ácido Hialurónico</option>
-                    <option>Toxina Botulínica / Botox</option>
-                    <option>Hilos Tensores</option>
-                    <option>Bioestimuladores (Profhilo, Radiesse, Sculptra)</option>
-                    <option>Limpieza Facial</option>
-                    <option>Plasma Rico en Plaquetas</option>
-                    <option>Dermapen (Microagujas)</option>
-                    <option>Tratamiento Corporal</option>
-                    <option>Otro</option>
-                  </select>
-                </div>
-
-                <!-- Botón -->
-                <div class="col-12 text-center mt-3">
-                  <button type="button" class="btn btn-form-submit" id="btnWhatsapp">
-                    <i class="bi bi-whatsapp me-2"></i>
-                    Enviar por WhatsApp
-                  </button>
-                </div>
-
-              </div>
+            <!-- Nombre -->
+            <div class="col-md-6">
+              <label class="form-label">Nombre *</label>
+              <input type="text" id="nombre" class="form-control form-input" placeholder="Tu nombre">
+              <div id="error-nombre" class="text-danger small mt-1"></div>
             </div>
+
+            <!-- Apellido -->
+            <div class="col-md-6">
+              <label class="form-label">Apellido *</label>
+              <input type="text" id="apellido" class="form-control form-input" placeholder="Tu apellido">
+              <div id="error-apellido" class="text-danger small mt-1"></div>
+            </div>
+
+            <!-- Correo -->
+            <div class="col-md-6">
+              <label class="form-label">Correo electrónico *</label>
+              <input type="email" id="correo" class="form-control form-input" placeholder="tucorreo@email.com">
+              <div id="error-correo" class="text-danger small mt-1"></div>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="col-md-6">
+              <label class="form-label">Número de teléfono *</label>
+              <input type="tel" id="telefono" class="form-control form-input" placeholder="+57 300 000 0000">
+              <div id="error-telefono" class="text-danger small mt-1"></div>
+            </div>
+
+            <!-- Procedimiento -->
+            <div class="col-12">
+              <label class="form-label">¿En qué procedimiento estás interesada? *</label>
+              <select id="procedimiento" class="form-select form-input">
+                <option value="" disabled selected>Selecciona un procedimiento</option>
+                <option>Armonización Facial</option>
+                <option>Ácido Hialurónico</option>
+                <option>Toxina Botulínica / Botox</option>
+                <option>Hilos Tensores</option>
+                <option>Bioestimuladores (Profhilo, Radiesse, Sculptra)</option>
+                <option>Limpieza Facial</option>
+                <option>Plasma Rico en Plaquetas</option>
+                <option>Dermapen (Microagujas)</option>
+                <option>Tratamiento Corporal</option>
+                <option>Otro</option>
+              </select>
+              <div id="error-procedimiento" class="text-danger small mt-1"></div>
+            </div>
+
+            <!-- Botón -->
+            <div class="col-12 text-center mt-3">
+              <button type="button" class="btn btn-form-submit" id="btnEnviar">
+                <i class="bi bi-calendar-check me-2"></i>
+                Agendar cita
+              </button>
+            </div>
+
+            <!-- Mensaje de éxito/error general -->
+            <div id="mensaje-general" class="col-12 text-center mt-2"></div>
+
           </div>
         </div>
-
       </div>
-    </section>
+    </div>
+
+  </div>
+</section>
 
   </main>
 
