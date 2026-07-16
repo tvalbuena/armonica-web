@@ -1,7 +1,7 @@
 /* =========================
    ESTILOS GENERALES
 ========================= */
-
+ 
 body {
   background-color: #F9EFEF;
   font-family: 'Poppins', sans-serif;
@@ -9,21 +9,21 @@ body {
   padding: 0;
   color: #4A4A4A;
 }
-
+ 
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   color: #7B3F4A;
 }
-
+ 
 p {
   line-height: 2.0;
   color: #4A4A4A;
 }
-
+ 
 /* =========================
    NAVBAR
 ========================= */
-
+ 
 .navbar {
   background-color: #ffffff;
   border-bottom: 1.5px solid #D48FA6;
@@ -31,46 +31,46 @@ p {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-
+ 
 .logo-armonica {
   height: 45px;
   width: auto;
   object-fit: contain;
 }
-
+ 
 .brand-text {
   display: flex;
   flex-direction: column;
   line-height: 1;
 }
-
+ 
 .brand-title {
   font-family: 'Playfair Display', serif;
   font-size: 1.3rem;
   font-weight: 700;
   color: #7B3F4A;
 }
-
+ 
 .brand-subtitle {
   font-size: 0.8rem;
   color: #7B3F4A;
   letter-spacing: 1px;
 }
-
+ 
 .navbar .nav-link {
   color: #7B3F4A;
   font-weight: 500;
   margin-right: 15px;
 }
-
+ 
 .navbar .nav-link:hover {
   color: #D48FA6;
 }
-
+ 
 /* =========================
    BOTONES
 ========================= */
-
+ 
 .btn-agendar {
   background-color: #7C8C6B;
   color: white;
@@ -79,12 +79,12 @@ p {
   font-weight: 500;
   border: none;
 }
-
+ 
 .btn-agendar:hover {
   background-color: #6B7B5C;
   color: white;
 }
-
+ 
 .btn-outline-rosa {
   border: 2px solid #d48fa6;
   color: #d48fa6;
@@ -92,16 +92,22 @@ p {
   padding: 10px 25px;
   transition: all 0.3s ease;
 }
-
+ 
 .btn-outline-rosa:hover {
   background-color: #d48fa6;
   color: white;
 }
-
+ 
 /* =========================
    BOTÓN FLOTANTE WHATSAPP
 ========================= */
-
+ 
+@keyframes pulso-whatsapp {
+  0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70%  { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+ 
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -115,22 +121,30 @@ p {
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   z-index: 1000;
+  animation: pulso-whatsapp 2s infinite;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
+ 
+.whatsapp-float:hover {
+  background-color: #1da851;
+  transform: scale(1.1);
+  animation-play-state: paused;
+}
+ 
 .whatsapp-float i {
   color: white;
   font-size: 28px;
 }
-
+ 
 /* =========================
    HERO
 ========================= */
-
+ 
 .hero-section {
   padding: 100px 0 60px 0;
   background-color: #F9EFEF;
 }
-
+ 
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;
@@ -138,21 +152,21 @@ p {
   line-height: 1.2;
   margin-bottom: 20px;
 }
-
+ 
 .hero-subtext {
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 35px;
   max-width: 500px;
 }
-
+ 
 .hero-section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   max-height: 500px;
 }
-
+ 
 .hero-section .btn-agendar {
   background-color: #7c8c6b;
   border: none;
@@ -161,38 +175,38 @@ p {
   font-weight: 500;
   color: white;
 }
-
+ 
 .hero-section .btn-agendar:hover {
   background-color: #6b7b5c;
 }
-
+ 
 /* =========================
    TÍTULOS DE SECCIÓN
 ========================= */
-
+ 
 .section-title {
   font-size: 2.4rem;
   margin-bottom: 15px;
   font-weight: 600;
 }
-
+ 
 .section-subtitle {
   max-width: 600px;
   margin: 0 auto;
   color: #666;
   font-size: 1.05rem;
 }
-
+ 
 /* =========================
    SERVICIOS
 ========================= */
-
+ 
 .services-section {
   padding: 80px 0;
   background-color: #F9EFEF;
   box-shadow: inset 0 15px 20px -10px rgba(212, 143, 166, 0.15);
 }
-
+ 
 .service-card {
   background-color: white;
   padding: 28px;
@@ -205,12 +219,12 @@ p {
   flex-direction: column;
   overflow: hidden;
 }
-
+ 
 .service-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 35px rgba(0,0,0,0.08);
 }
-
+ 
 .service-img {
   width: 100%;
   height: 250px;
@@ -218,11 +232,11 @@ p {
   border-radius: 16px;
   transition: transform 0.4s ease;
 }
-
+ 
 .service-card:hover .service-img {
   transform: scale(1.03);
 }
-
+ 
 .service-card h4 {
   font-size: 1.35rem;
   margin-top: 22px;
@@ -230,23 +244,23 @@ p {
   color: #7B3F4A;
   font-weight: 600;
 }
-
+ 
 .service-card p {
   font-size: 0.95rem;
   color: #555;
   margin-bottom: 25px;
   flex-grow: 1;
 }
-
+ 
 /* =========================
    PRODUCTOS
 ========================= */
-
+ 
 .products-section {
   padding: 80px 0;
   background-color: #fdf5f5;
 }
-
+ 
 .product-card {
   background-color: white;
   padding: 28px;
@@ -259,12 +273,12 @@ p {
   height: 100%;
   overflow: hidden;
 }
-
+ 
 .product-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 35px rgba(0,0,0,0.08);
 }
-
+ 
 .product-img {
   width: 100%;
   height: 220px;
@@ -273,11 +287,11 @@ p {
   transition: transform 0.4s ease;
   margin-bottom: 5px;
 }
-
+ 
 .product-card:hover .product-img {
   transform: scale(1.03);
 }
-
+ 
 .product-card h4 {
   font-size: 1.2rem;
   margin-top: 20px;
@@ -285,22 +299,22 @@ p {
   color: #7B3F4A;
   font-weight: 600;
 }
-
+ 
 .product-card p {
   font-size: 0.95rem;
   color: #555;
   line-height: 1.7;
 }
-
+ 
 /* =========================
    PROFESIONALES
 ========================= */
-
+ 
 .professionals-section {
   padding: 80px 0;
   background-color: #F9EFEF;
 }
-
+ 
 .professional-card {
   background-color: white;
   padding: 35px 28px;
@@ -313,12 +327,12 @@ p {
   align-items: center;
   height: 100%;
 }
-
+ 
 .professional-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 35px rgba(0,0,0,0.08);
 }
-
+ 
 .professional-img {
   width: 150px;
   height: 150px;
@@ -329,14 +343,14 @@ p {
   border: 4px solid #f9efef;
   box-shadow: 0 4px 15px rgba(212, 143, 166, 0.3);
 }
-
+ 
 .professional-card h4 {
   font-size: 1.3rem;
   font-weight: 600;
   color: #7B3F4A;
   margin-bottom: 6px;
 }
-
+ 
 .professional-title {
   font-size: 0.85rem;
   color: #d48fa6;
@@ -345,44 +359,44 @@ p {
   margin-bottom: 12px;
   display: block;
 }
-
+ 
 .professional-card p {
   font-size: 0.92rem;
   color: #555;
   line-height: 1.7;
 }
-
+ 
 /* =========================
    INSTALACIONES
 ========================= */
-
+ 
 .instalaciones-section {
   padding: 80px 0;
   background-color: #fdf5f5;
 }
-
+ 
 .instalaciones-section .carousel {
   max-width: 750px;
   margin: 0 auto;
 }
-
+ 
 .instalaciones-section .carousel-inner {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
-
+ 
 .instalaciones-section .carousel-inner img {
   height: 420px;
   object-fit: contain;
   background-color: #fdf5f5;
 }
-
+ 
 .instalaciones-section .carousel-control-prev,
 .instalaciones-section .carousel-control-next {
   width: 5%;
 }
-
+ 
 .instalaciones-section .carousel-control-prev-icon,
 .instalaciones-section .carousel-control-next-icon {
   background-color: rgba(123, 63, 74, 0.5);
@@ -390,16 +404,16 @@ p {
   padding: 20px;
   background-size: 50%;
 }
-
+ 
 /* =========================
    RESULTADOS
 ========================= */
-
+ 
 .results-section {
   padding: 80px 0;
   background-color: #F9EFEF;
 }
-
+ 
 .resultado-card {
   max-width: 450px;
   border-radius: 20px;
@@ -408,14 +422,14 @@ p {
   background-color: white;
   text-align: center;
 }
-
+ 
 .resultado-img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-
+ 
 .resultado-label {
   font-size: 1rem;
   font-weight: 600;
@@ -423,12 +437,12 @@ p {
   padding: 14px 0 10px 0;
   margin: 0;
 }
-
+ 
 .resultado-indicators {
   position: relative;
   margin-top: 20px;
 }
-
+ 
 .resultado-indicators button {
   width: 10px;
   height: 10px;
@@ -437,27 +451,27 @@ p {
   border: none;
   opacity: 0.4;
 }
-
+ 
 .resultado-indicators button.active {
   opacity: 1;
   background-color: #7B3F4A;
 }
-
+ 
 .results-disclaimer {
   font-size: 0.82rem;
   color: #999;
   font-style: italic;
 }
-
+ 
 /* =========================
    RESEÑAS
 ========================= */
-
+ 
 .reviews-section {
   padding: 80px 0;
   background-color: #fdf5f5;
 }
-
+ 
 .reviews-rating {
   display: flex;
   align-items: center;
@@ -465,24 +479,24 @@ p {
   gap: 10px;
   flex-wrap: wrap;
 }
-
+ 
 .rating-number {
   font-size: 2.5rem;
   font-weight: 700;
   color: #7B3F4A;
   font-family: 'Playfair Display', serif;
 }
-
+ 
 .rating-stars i {
   color: #FBBC04;
   font-size: 1.3rem;
 }
-
+ 
 .rating-source {
   font-size: 0.85rem;
   color: #888;
 }
-
+ 
 .review-card {
   background-color: white;
   padding: 28px;
@@ -492,19 +506,19 @@ p {
   display: flex;
   flex-direction: column;
 }
-
+ 
 .review-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 35px rgba(0,0,0,0.08);
 }
-
+ 
 .review-header {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 15px;
 }
-
+ 
 .review-avatar {
   width: 45px;
   height: 45px;
@@ -518,25 +532,25 @@ p {
   justify-content: center;
   flex-shrink: 0;
 }
-
+ 
 .review-name {
   font-weight: 600;
   color: #4A4A4A;
   margin: 0;
   font-size: 0.95rem;
 }
-
+ 
 .review-stars i {
   color: #FBBC04;
   font-size: 0.85rem;
 }
-
+ 
 .google-icon {
   width: 20px;
   height: 20px;
   margin-left: auto;
 }
-
+ 
 .review-text {
   font-size: 0.92rem;
   color: #555;
@@ -544,36 +558,36 @@ p {
   flex-grow: 1;
   font-style: italic;
 }
-
+ 
 .review-date {
   font-size: 0.8rem;
   color: #aaa;
   margin-top: 10px;
 }
-
+ 
 /* =========================
    FORMULARIO
 ========================= */
-
+ 
 .form-section {
   padding: 80px 0;
   background-color: #F9EFEF;
 }
-
+ 
 .form-card {
   background-color: white;
   padding: 45px 40px;
   border-radius: 24px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.07);
 }
-
+ 
 .form-label {
   font-size: 0.9rem;
   font-weight: 500;
   color: #7B3F4A;
   margin-bottom: 6px;
 }
-
+ 
 .form-input {
   border: 1.5px solid #e8d5da;
   border-radius: 12px;
@@ -582,13 +596,13 @@ p {
   color: #4A4A4A;
   transition: all 0.3s ease;
 }
-
+ 
 .form-input:focus {
   border-color: #d48fa6;
   box-shadow: 0 0 0 3px rgba(212, 143, 166, 0.15);
   outline: none;
 }
-
+ 
 .btn-form-submit {
   background-color: #25d366;
   color: white;
@@ -599,47 +613,47 @@ p {
   font-weight: 500;
   transition: all 0.3s ease;
 }
-
+ 
 .btn-form-submit:hover {
   background-color: #1da851;
   color: white;
   transform: translateY(-2px);
 }
-
+ 
 /* =========================
    FOOTER
 ========================= */
-
+ 
 .footer {
   background-color: #2a1520;
   padding: 60px 0 30px 0;
 }
-
+ 
 .footer-brand-title {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: #f9efef;
 }
-
+ 
 .footer-brand-subtitle {
   font-size: 0.75rem;
   color: #d48fa6;
   letter-spacing: 1px;
 }
-
+ 
 .footer-text {
   font-size: 0.88rem;
   color: #c4a4ad;
   line-height: 1.7;
 }
-
+ 
 .footer-social {
   display: flex;
   gap: 10px;
   margin-top: 15px;
 }
-
+ 
 .footer-social a {
   width: 38px;
   height: 38px;
@@ -653,12 +667,12 @@ p {
   transition: all 0.3s ease;
   text-decoration: none;
 }
-
+ 
 .footer-social a:hover {
   background-color: #d48fa6;
   color: white;
 }
-
+ 
 .footer-title {
   color: #f9efef;
   font-weight: 600;
@@ -668,17 +682,17 @@ p {
   border-bottom: 2px solid #d48fa6;
   display: inline-block;
 }
-
+ 
 .footer-links {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
+ 
 .footer-links li {
   margin-bottom: 10px;
 }
-
+ 
 .footer-links a {
   color: #c4a4ad;
   text-decoration: none;
@@ -688,28 +702,28 @@ p {
   align-items: center;
   gap: 6px;
 }
-
+ 
 .footer-links a:hover {
   color: #d48fa6;
 }
-
+ 
 .footer-links i {
   font-size: 0.75rem;
 }
-
+ 
 .footer-contact {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
+ 
 .footer-contact li {
   display: flex;
   align-items: flex-start;
   gap: 12px;
   margin-bottom: 16px;
 }
-
+ 
 .contact-icon {
   width: 38px;
   height: 38px;
@@ -720,31 +734,31 @@ p {
   justify-content: center;
   flex-shrink: 0;
 }
-
+ 
 .contact-icon i {
   color: white;
   font-size: 0.95rem;
 }
-
+ 
 .footer-contact strong {
   color: #f9efef;
   font-size: 0.88rem;
   display: block;
   margin-bottom: 2px;
 }
-
+ 
 .footer-contact p {
   color: #c4a4ad;
   font-size: 0.82rem;
   margin: 0;
   line-height: 1.5;
 }
-
+ 
 .footer-divider {
   border-color: rgba(212, 143, 166, 0.2);
   margin: 30px 0 20px 0;
 }
-
+ 
 .footer-copy {
   color: #8a6570;
   font-size: 0.82rem;

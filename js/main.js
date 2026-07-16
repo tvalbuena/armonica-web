@@ -61,6 +61,14 @@ const validaciones = {
     if (!valor) return 'El correo es obligatorio';
     if (!REGEX.correo.test(valor)) return 'El formato del correo no es válido';
     if (valor.length > 150) return 'El correo no puede exceder 150 caracteres';
+    const dominiosTemporales = [
+      'mailinator.com', 'tempmail.com', 'guerrillamail.com',
+      'throwaway.email', 'yopmail.com', 'trashmail.com'
+    ];
+    const dominio = valor.split('@')[1];
+    if (dominio && dominiosTemporales.includes(dominio.toLowerCase())) {
+      return 'No se permiten correos temporales';
+    }
     return '';
   },
   telefono: (valor) => {
@@ -183,28 +191,3 @@ const enviarCita = async () => {
 
 btnEnviar.addEventListener('click', enviarCita);
 
-// ===========================
-// BOTÓN FLOTANTE WHATSAPP
-// ===========================
-
-const abrirWhatsApp = () => {
-  const nombre = campos.nombre.value;
-  const apellido = campos.apellido.value;
-  const correo = campos.correo.value;
-  const telefono = campos.telefono.value;
-  const procedimiento = campos.procedimiento.value;
-
-  const mensaje =
-    `Hola ARMÓNICA! Me gustaría agendar una cita 😊%0A%0A` +
-    `*Nombre:* ${nombre} ${apellido}%0A` +
-    `*Correo:* ${correo}%0A` +
-    `*Teléfono:* ${telefono}%0A` +
-    `*Procedimiento de interés:* ${procedimiento}`;
-
-  window.open(`https://wa.me/573227132918?text=${mensaje}`, '_blank');
-};
-
-const btnWhatsapp = document.getElementById('btnWhatsapp');
-if (btnWhatsapp) {
-  btnWhatsapp.addEventListener('click', abrirWhatsApp);
-}
